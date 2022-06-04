@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,117 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!--CSS -->
-    <link rel="stylesheet" href="/style.css">    
+    <link rel="stylesheet" href="assets\css\style.css">
     <!-- Swiper  -->
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />    
-    <title>Tercera Entrega</title>  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Tercera Entrega</title>
 </head>
+
 <body>
-    
-</body>
-</html>
+    <!-- NAVBAR -->
+    <div class="container">
+      <nav>
+        <div class="nav__logo"><img src="assets\img\logo-text.png" class="nav__logo__img" alt="logo"></div>
+        <div class="nav__menu">
+          <div class="nav__menu__element"><a class="nav__menu__a" href="#">Inicio</a></div>
+          <div class="nav__menu__element"><a class="nav__menu__a" href="#">Acerca de</a></div>
+          <div class="nav__menu__element"><a class="nav__menu__a" href="#">Servicios</a></div>
+          <div class="nav__menu__element"><a class="nav__menu__a" href="#">Portfolio</a></div>
+          <div class="nav__menu__element"><a class="nav__menu__a" href="#">Contacto</a></div>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- CAROUSEL  -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets\img\img-1.png" alt="Foto 1"></div>
+        <div class="swiper-slide"><img src="assets\img\img-2.png" alt="Foto 2"></div>
+        <div class="swiper-slide"><img src="assets\img\img-3.png" alt="Foto 3"></div>
+        <div class="swiper-slide"><img src="assets\img\img-4.png" alt="Foto 4"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  
+    <!-- WELCOME SECTION -->
+    <div class="container">
+      <section class="welcome">
+        <h1>¡Bienvenido! ✨</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio hic tempore vel nulla distinctio, nam cumque
+          maiores reprehenderit pariatur sunt sint itaque officiis modi consequatur iusto fugit suscipit praesentium.
+          Quo.</p>
+      </section>
+    </div>
+  
+    <!-- COLUMNS -->
+    <div class="container">
+      <section class="columns">
+        <div class="columns__menu">
+          <div class="columns__menu__element">
+            <i class="fa fa-users fa-3x icon-columns"></i>
+            <h2>Management</h2>
+            <div class="columns__element__text"> It was popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum
+              passages, and
+              more.</div>
+          </div>
+  
+          <div class="columns__menu__element">
+            <i class="fas fa-chart-bar fa-3x icon-columns"></i>
+            <h2>Planning</h2>
+            <div class="columns__element__text"> The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+              below for those interested. Sections 1.10.32 and 1.10.33</div>
+          </div>
+  
+          <div class="columns__menu__element">
+            <i class="fab fa-stumbleupon-circle fa-3x icon-columns"></i>
+            <h2>Marketing</h2>
+            <div class="columns__element__text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from
+              a line in section 1.10.32</div>
+          </div>
+  
+          <div class="columns__menu__element">
+            <i class="far fa-file-word fa-3x icon-columns"></i>
+            <h2>Reports</h2>
+            <div class="columns__element__text">There are many variations of passages of Lorem Ipsum available, but the
+              majority have suffered alteration in some form.</div>
+          </div>
+  
+        </div>
+    </div>
+    </section>
+    </div>
+  
+    <!-- FOOTER -->
+    <div class="container">
+      <footer>
+        <div class="footer__text">Sitio desarrollado por Marly Concha ✨</div>
+        <div class="footer__menu">
+          <div class="footer__menu__element"><a class="footer__menu__a"><i
+                class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="footer__menu__element"><a class="footer__menu__a"><i
+                class="fa-brands fa-instagram"></i></a></div>
+          <div class="footer__menu__element"><a class="footer__menu__a"><i
+                class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </footer>
+    </div>
+  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+  
+  </html>
